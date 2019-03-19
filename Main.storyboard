@@ -18,34 +18,44 @@
                         <rect key="frame" x="0.0" y="0.0" width="414" height="736"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Welcome!" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="4na-lo-N3h">
-                                <rect key="frame" x="169" y="73" width="76" height="21"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                <nil key="textColor"/>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Tap Tiles!" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="4na-lo-N3h">
+                                <rect key="frame" x="112" y="73" width="190" height="76"/>
+                                <fontDescription key="fontDescription" name="Noteworthy-Bold" family="Noteworthy" pointSize="47"/>
+                                <color key="textColor" red="0.93469524383544922" green="0.76983469724655151" blue="0.38814079761505127" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                                 <nil key="highlightedColor"/>
                             </label>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="fsJ-Bx-oeg">
-                                <rect key="frame" x="150.66666666666666" y="177" width="112.99999999999997" height="30"/>
-                                <state key="normal" title="Start New Game"/>
+                                <rect key="frame" x="131.66666666666666" y="367" width="150.99999999999997" height="51"/>
+                                <fontDescription key="fontDescription" name="Noteworthy-Light" family="Noteworthy" pointSize="24"/>
+                                <state key="normal" title="Start New Game">
+                                    <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                </state>
                                 <connections>
                                     <segue destination="vct-aP-FCu" kind="show" id="HJZ-ra-LmD"/>
                                 </connections>
                             </button>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Tap the black tiles as fast as you can!" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="WUB-80-qJ2">
+                                <rect key="frame" x="21" y="214" width="372" height="41.666666666666657"/>
+                                <fontDescription key="fontDescription" name="Noteworthy-Light" family="Noteworthy" pointSize="26"/>
+                                <color key="textColor" red="0.93469524380000002" green="0.76983469719999997" blue="0.38814079759999998" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                <nil key="highlightedColor"/>
+                            </label>
                         </subviews>
-                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <color key="backgroundColor" red="0.10330254584550858" green="0.26343470811843872" blue="0.21960374712944031" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                         <constraints>
                             <constraint firstItem="4na-lo-N3h" firstAttribute="top" secondItem="xu4-LT-nvd" secondAttribute="top" constant="53" id="97j-6E-JEv"/>
+                            <constraint firstItem="fsJ-Bx-oeg" firstAttribute="centerX" secondItem="cDy-hw-MDc" secondAttribute="centerX" id="Cnw-1K-FMU"/>
                             <constraint firstItem="4na-lo-N3h" firstAttribute="centerX" secondItem="cDy-hw-MDc" secondAttribute="centerX" id="Rj2-cv-2TM"/>
-                            <constraint firstItem="fsJ-Bx-oeg" firstAttribute="top" secondItem="4na-lo-N3h" secondAttribute="bottom" constant="83" id="V5U-o2-vAY"/>
-                            <constraint firstItem="fsJ-Bx-oeg" firstAttribute="centerX" secondItem="cDy-hw-MDc" secondAttribute="centerX" id="Xlb-qb-vYd"/>
-                            <constraint firstItem="fsJ-Bx-oeg" firstAttribute="centerX" secondItem="4na-lo-N3h" secondAttribute="centerX" id="aQq-Ov-Rle"/>
+                            <constraint firstItem="fsJ-Bx-oeg" firstAttribute="top" secondItem="WUB-80-qJ2" secondAttribute="bottom" constant="111.33" id="fjL-I1-0r3"/>
+                            <constraint firstItem="WUB-80-qJ2" firstAttribute="centerX" secondItem="cDy-hw-MDc" secondAttribute="centerX" id="nGT-Uo-viz"/>
+                            <constraint firstItem="WUB-80-qJ2" firstAttribute="top" secondItem="4na-lo-N3h" secondAttribute="bottom" constant="65" id="uPD-bA-QPl"/>
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="xu4-LT-nvd"/>
                     </view>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="HmW-bP-OFm" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-683" y="153"/>
+            <point key="canvasLocation" x="-684.05797101449275" y="152.44565217391306"/>
         </scene>
         <!--Play View Controller-->
         <scene sceneID="cfL-xA-Da4">
@@ -256,43 +266,48 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="V4v-Kd-sle">
-                                <rect key="frame" x="158.66666666666666" y="265" width="97" height="36"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="20"/>
-                                <state key="normal" title="New Game"/>
+                                <rect key="frame" x="152" y="353.33333333333331" width="110" height="56"/>
+                                <fontDescription key="fontDescription" name="Noteworthy-Light" family="Noteworthy" pointSize="27"/>
+                                <state key="normal" title="New Game">
+                                    <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                </state>
                                 <connections>
                                     <segue destination="vct-aP-FCu" kind="show" id="PmL-Vs-Q5p"/>
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="huq-lr-dyE">
-                                <rect key="frame" x="158.66666666666666" y="334" width="97" height="36"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="20"/>
-                                <state key="normal" title="Main Menu"/>
+                                <rect key="frame" x="148.66666666666666" y="442.33333333333331" width="116.99999999999997" height="56"/>
+                                <fontDescription key="fontDescription" name="Noteworthy-Light" family="Noteworthy" pointSize="27"/>
+                                <state key="normal" title="Main Menu">
+                                    <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                </state>
                                 <connections>
                                     <segue destination="tiH-WN-thc" kind="show" id="T0d-KW-Uwf"/>
                                 </connections>
                             </button>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Game Over" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="K3q-Mt-WB8">
-                                <rect key="frame" x="134.66666666666666" y="84" width="144.99999999999997" height="33"/>
-                                <fontDescription key="fontDescription" type="system" weight="heavy" pointSize="27"/>
-                                <nil key="textColor"/>
+                                <rect key="frame" x="71" y="84" width="272" height="91.333333333333314"/>
+                                <fontDescription key="fontDescription" name="Noteworthy-Bold" family="Noteworthy" pointSize="57"/>
+                                <color key="textColor" red="1" green="0.011367673219999999" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                                 <nil key="highlightedColor"/>
                             </label>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="\(Score)" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Wmx-RQ-V9s">
-                                <rect key="frame" x="151.33333333333334" y="148" width="111.33333333333334" height="33"/>
-                                <fontDescription key="fontDescription" type="system" weight="heavy" pointSize="27"/>
-                                <color key="textColor" red="1" green="0.011367673219999999" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                <rect key="frame" x="20" y="206.33333333333334" width="374" height="48"/>
+                                <fontDescription key="fontDescription" name="Noteworthy-Light" family="Noteworthy" pointSize="30"/>
+                                <color key="textColor" red="0.93469524380000002" green="0.76983469719999997" blue="0.38814079759999998" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                                 <nil key="highlightedColor"/>
                             </label>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="High Score" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="kQG-z3-w2B">
-                                <rect key="frame" x="135" y="189" width="144" height="33"/>
-                                <fontDescription key="fontDescription" type="system" weight="heavy" pointSize="27"/>
-                                <color key="textColor" red="1" green="0.011367673219999999" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                <rect key="frame" x="20" y="262.33333333333331" width="374" height="48"/>
+                                <fontDescription key="fontDescription" name="Noteworthy-Light" family="Noteworthy" pointSize="30"/>
+                                <color key="textColor" red="0.93469524380000002" green="0.76983469719999997" blue="0.38814079759999998" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                                 <nil key="highlightedColor"/>
                             </label>
                         </subviews>
-                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <color key="backgroundColor" red="0.10330254580000001" green="0.26343470810000003" blue="0.2196037471" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                         <constraints>
                             <constraint firstItem="K3q-Mt-WB8" firstAttribute="top" secondItem="XSk-9G-iML" secondAttribute="top" constant="64" id="0dp-Dt-Yuo"/>
+                            <constraint firstItem="Wmx-RQ-V9s" firstAttribute="leading" secondItem="XSk-9G-iML" secondAttribute="leading" constant="20" id="3qW-s7-fyi"/>
                             <constraint firstItem="huq-lr-dyE" firstAttribute="top" secondItem="V4v-Kd-sle" secondAttribute="bottom" constant="33" id="3ww-aa-8SG"/>
                             <constraint firstItem="V4v-Kd-sle" firstAttribute="top" secondItem="kQG-z3-w2B" secondAttribute="bottom" constant="43" id="5zn-yF-qRc"/>
                             <constraint firstItem="kQG-z3-w2B" firstAttribute="centerX" secondItem="6Qn-5r-OYF" secondAttribute="centerX" id="7kx-we-wvY"/>
@@ -300,8 +315,11 @@
                             <constraint firstItem="Wmx-RQ-V9s" firstAttribute="top" secondItem="K3q-Mt-WB8" secondAttribute="bottom" constant="31" id="ALl-qx-JSS"/>
                             <constraint firstItem="V4v-Kd-sle" firstAttribute="centerX" secondItem="6Qn-5r-OYF" secondAttribute="centerX" id="Led-xi-hx9"/>
                             <constraint firstItem="K3q-Mt-WB8" firstAttribute="centerX" secondItem="6Qn-5r-OYF" secondAttribute="centerX" id="aka-Sh-hju"/>
+                            <constraint firstItem="XSk-9G-iML" firstAttribute="trailing" secondItem="kQG-z3-w2B" secondAttribute="trailing" constant="20" id="cXt-X5-XC0"/>
+                            <constraint firstItem="kQG-z3-w2B" firstAttribute="leading" secondItem="XSk-9G-iML" secondAttribute="leading" constant="20" id="d5h-xI-Pnk"/>
                             <constraint firstItem="Wmx-RQ-V9s" firstAttribute="centerX" secondItem="6Qn-5r-OYF" secondAttribute="centerX" id="kDc-Sk-sb8"/>
                             <constraint firstItem="kQG-z3-w2B" firstAttribute="top" secondItem="Wmx-RQ-V9s" secondAttribute="bottom" constant="8" id="wVt-eX-BK5"/>
+                            <constraint firstItem="XSk-9G-iML" firstAttribute="trailing" secondItem="Wmx-RQ-V9s" secondAttribute="trailing" constant="20" id="yE3-cr-pup"/>
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="XSk-9G-iML"/>
                     </view>
@@ -317,6 +335,6 @@
     </scenes>
     <inferredMetricsTieBreakers>
         <segue reference="XaB-dl-i4W"/>
-        <segue reference="PmL-Vs-Q5p"/>
+        <segue reference="HJZ-ra-LmD"/>
     </inferredMetricsTieBreakers>
 </document>
