@@ -188,15 +188,11 @@ class PlayViewController: UIViewController {
         WhiteTile15.layer.borderColor = UIColor.black.cgColor
         WhiteTile15.layer.borderWidth = 0.5
         
+        
        
     }
     
-    override func viewWillAppear(_ animated: Bool) {
-        super.viewWillAppear(animated)
-        
-        
-        
-    }
+
 
     
     
@@ -623,15 +619,6 @@ class PlayViewController: UIViewController {
         
     }
     
-    func MoveDown () {
-        // Move all tiles down
-        // Score keeping
-    }
-
-    
-    func EndGame () {
-        // End the game function
-    }
     
     
     func RandomPlacementOne () {
@@ -773,6 +760,7 @@ class PlayViewController: UIViewController {
             WhiteTile13.center.x = 156
             WhiteTile14.center.x = 260
             WhiteTile15.center.x = 364
+        
             
         case 1:
             BlackTile5.center.x = 156
@@ -810,6 +798,8 @@ class PlayViewController: UIViewController {
         
         
     }
+    
+    
     
    
 }
